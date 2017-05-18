@@ -23,7 +23,7 @@ Since NeDB is pure JavaScript, you can use the Node REPL. I created a small file
 
 Every MongoDB method used in this course can also be done in NeDB, but you'll need to read the docs (fortunately they are really good).  
 
-**Inserting documents:**  
+**Creating documents:**  
 `insert()` can be passed an optional callback function that returns the newly created document, including it's unique `_id`.  
 ```
 db.posts.insert({title: 'Hello World'}, (error, document) => {
@@ -32,7 +32,7 @@ db.posts.insert({title: 'Hello World'}, (error, document) => {
 });
 ```
 
-**Find all documents:**  
+**Reading documents:**  
 The NeDB API methods return a cursor object - not the data. In order to access the data, you must use a callback function. The data will be an array of documents.  
 ```
 db.posts.find({}, (error, data) => {
@@ -65,12 +65,12 @@ db.posts.find({}, {title: 1}, (error, data) => {
 });
 ```
 
-Updating also works similarly:  
+**Updating documents:**  
 ```
 db.posts.update({title: 'Moby Dick'}, {$set: {title: 'In the Heart of the Sea'}}, {});
 ```
 
-As does deleting:  
+**Deleting documents**:  
 ```
 db.posts.remove({title: 'In the Heart of the Sea'}, {});
 ```
