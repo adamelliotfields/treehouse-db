@@ -8,6 +8,7 @@
 **[Reporting with SQL](https://github.com/adamelliotfields/treehouse-db/tree/master/reporting-with-sql)**  
 **[Querying Relational Databases](https://github.com/adamelliotfields/treehouse-db/tree/master/querying-relational-databases)**  
 **[SQL Window Functions](https://github.com/adamelliotfields/treehouse-db/tree/master/sql-window-functions)**  
+**[Mongo Basics](https://github.com/adamelliotfields/treehouse-db/tree/master/mongo-basics)**  
 
 ### Other Topics
 

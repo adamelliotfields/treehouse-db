@@ -8,6 +8,12 @@ Documents
 Collections  
 Records  
 
+### Instructions
+1.  Download and extract the [zip](https://raw.githubusercontent.com/adamelliotfields/treehouse-db/master/mongo-basics/mongo-basics.zip).
+2.  Run `npm install` or `yarn install`.
+3.  Run `node seed.js` to seed the collections.
+4.  Run `node repl.js` to use the CLI.
+
 ### Notes
 I used [NeDB](https://github.com/louischatriot/nedb) to complete this course, which is a JavaScript-based database that uses a subset of the MongoDB API. NeDB is a local, serverless database similar to SQLite.  
 
@@ -17,18 +23,21 @@ Since NeDB is pure JavaScript, you can use the Node REPL. I created a small file
 
 Every MongoDB method used in this course can also be done in NeDB, but you'll need to read the docs (fortunately they are really good).  
 
-Inserting documents:  
+**Inserting documents:**  
+`insert()` can be passed an optional callback function that returns the newly created document, including it's unique `_id`.  
 ```
-db.posts.insert({title: 'Hello World'});
+db.posts.insert({title: 'Hello World'}, (error, document) => {
+  if (error) throw error;
+  console.log('Inserted document ID:', document._id)
+});
 ```
 
+**Find all documents:**  
 The NeDB API methods return a cursor object - not the data. In order to access the data, you must use a callback function. The data will be an array of documents.  
-
-Find all documents:  
 ```
 db.posts.find({}, (error, data) => {
   if (error) throw error;
-  console.log(data[0]);
+  console.log(data);
 });
 ```
 
