@@ -1,0 +1,9 @@
+{
+  "name": "mongo-basics",
+  "version": "0.0.1",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
