@@ -1,6 +1,6 @@
 ![Treehouse](treehouse.png)
 
-###### A collection of my completed Database projects at [Treehouse](https://teamtreehouse.com).
+> A collection of my completed Database projects at [Treehouse](https://teamtreehouse.com).
 
 ## Courses
 
@@ -15,5 +15,8 @@
 [HTML](https://github.com/adamelliotfields/treehouse-html)  
 [CSS](https://github.com/adamelliotfields/treehouse-css)  
 [JavaScript](https://github.com/adamelliotfields/treehouse-javascript)  
+[Node.js](https://github.com/adamelliotfields/treehouse-node)  
+[AngularJS](https://github.com/adamelliotfields/treehouse-angular)  
+[React](https://github.com/adamelliotfields/treehouse-react)  
 
-*For a full list of all my completed courses, check out my Treehouse [profile](https://teamtreehouse.com/adamelliotfields)*
+*For a full list of all my completed courses, check out my Treehouse [profile](https://teamtreehouse.com/adamelliotfields).*  
